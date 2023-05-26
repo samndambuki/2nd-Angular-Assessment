@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Students</h2>
+    <button (click)="getStudents()">Display All Students</button>
+    <ul>
+      <li *ngFor="let student of students">
+        <strong>Name:</strong> {{ student.name }}<br>
+        <strong>Age:</strong> {{ student.age }}<br>
+        <strong>Email:</strong> {{ student.email }}<br>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Add Student</h2>
+    <form [formGroup]="addStudentForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <br><br>
+            <input type="text" id="name" formControlName="name" placeholder="Enter your name" class="form-control">
+        </div>
+        <br><br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <br><br>
+            <input type="text" id="email" formControlName="email" placeholder="Enter your email" class="form-control">
+        </div>
+        <br><br>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <br><br>
+            <input type="text" id="age" formControlName="age" placeholder="Enter your age" class="form-control">
+        </div>
+        <br><br>
+        <button type="submit" [disabled]="addStudentForm.invalid">Add Student</button>
+    </form>
+
+</div>
